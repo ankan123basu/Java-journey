@@ -32,6 +32,7 @@ public class Rectangle2 {
         Rectangle r3 = new Rectangle(18,10);
         r1.area();
         r2.area();
+        sc.close();
     }
 }
     

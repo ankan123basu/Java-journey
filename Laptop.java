@@ -6,7 +6,7 @@ class Laptop {
     private int screen_size;
     private int price;
 
-public void getdata() {              // if this was private then , call this func in display public func  
+public void getdata() {        // if this was private then , call this func in display public func  
         Scanner sc = new Scanner(System.in);
           brand_name = sc.nextLine();
                 memory = sc.nextInt();
