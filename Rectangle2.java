@@ -5,8 +5,7 @@ public class Rectangle2 {
     private int breadth;
 
     public Rectangle2(){  // non - parameterised
-        length = 1;
-        breadth = 1;
+        this(1,1);
     }
 
     public Rectangle2(int length , int breadth){   // Parameterised
@@ -16,6 +15,11 @@ public class Rectangle2 {
 
     public void area(){
         System.out.println("Area is " + (length * breadth));
+        this.current();  // call a method by the current object in another method
+    }
+
+    public Rectangle2 current(){
+        return this;  // return the current object
     }
 
     public static void main(String[] args) {
@@ -23,8 +27,11 @@ public class Rectangle2 {
         int x = sc.nextInt();
         int y = sc.nextInt();
         Rectangle2 r1 = new Rectangle2();
+        r1.current();
         Rectangle2 r2 = new Rectangle2(x,y);
+        Rectangle r3 = new Rectangle(18,10);
         r1.area();
         r2.area();
     }
 }
+    
