@@ -1,4 +1,4 @@
-public class Inheritance {
+public class Inheritance {     // you can give file name this public class name
     void sound(){
         System.out.println("Animal makes sound");
     }
@@ -13,7 +13,7 @@ class Cat extends   Inheritance{
         System.out.println("Cat meows");
     }
 }
-class Main{
+class Main{                 
     public static void main(String[] args) {
         Inheritance obj = new Inheritance();
         obj.sound();
