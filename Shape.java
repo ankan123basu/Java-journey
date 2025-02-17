@@ -8,7 +8,7 @@ class Circle extends Shape {
     void area() {
         int radius = 3;
         double result = Math.PI * radius * radius;
-        System.out.println("Area of circle is " + result);
+        System.out.println("Area of circle is %.2f" + result);
     }
 }
 
