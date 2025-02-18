@@ -12,9 +12,11 @@ class Cow implements Animal,Pet{
     public void sound(){
         System.out.println("Cow says moo");
     }
+    @Override
     public void eat(){
         System.out.println("Cow eats grass");
     }
+    @Override
     public void freindly(){
         System.out.println("Cow is friendly");
     }
