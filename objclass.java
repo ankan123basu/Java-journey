@@ -16,6 +16,15 @@ class Car{
     public int hashCode(){
         return year;
     }
+
+    //OVERRIDING THE EQUALS METHOD OF OBJECT CLASS
+    public boolean equals(Object obj){
+        Car car = (Car) obj;
+        if(this.brand == car.brand && this.year == car.year){
+            return true;
+        }
+        return false;
+    }
 }
 
 public class objclass {
